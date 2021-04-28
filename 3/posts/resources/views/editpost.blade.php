@@ -11,9 +11,5 @@
   <input type="text" name="date" value="{{ $post->date }}">
   <input type="submit" name="" value="asd">
 </form>
-
-
-
-
   </body>
 </html>

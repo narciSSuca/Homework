@@ -37,11 +37,6 @@ class PostsController extends Controller
         $id->date=$req->input('date');
         $id->save();
 
-        // $id->update($req->all());
         return response()->json($id);
       }
-  //   public function GetPosts() {
-  //     $res = Post::all();
-  //     return response()->json($res);
-  // }
 }
