@@ -14,10 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
-      Route::get('news', 'NewsController@index');
-      Route::get('news/{id}', 'NewsController@show');
-      Route::post('news', 'NewsController@store');
-      Route::put('news/{id}', 'NewsController@update');
-      Route::delete('news/{id}', 'NewsController@destroy');
-
+      Route::get('news', 'NewsController@index'); //все новости
+      Route::get('news/{id}', 'NewsController@show'); //одна новость
+      Route::post('news', 'NewsController@store'); //создание новости
+      Route::put('news/{id}', 'NewsController@update'); //создание апдейт
+      Route::delete('news/{id}', 'NewsController@destroy'); //удаление
 });
